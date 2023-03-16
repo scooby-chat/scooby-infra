@@ -44,7 +44,7 @@ EOF
 
 ```shell
 bash << EOF
-#ping scoobychat.renatomoura.top
+ping -c 1 scoobychat.renatomoura.top
 sudo systemd-resolve --flush-caches
 kubectl get pods -n default
 kubectl apply -f ../k8s/
